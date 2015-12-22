@@ -1,0 +1,88 @@
+/*
+* Static Layout
+*/
+
+$navbar-static-nav-indent: 40px;
+
+$navbar-static-nav-color: $navbar-nav-color;
+$navbar-static-nav-background: $navbar-nav-background;
+$navbar-static-nav-hover-color: $navbar-nav-hover-color;
+$navbar-static-nav-hover-background: $navbar-nav-hover-background;
+$navbar-static-nav-active-color: $navbar-nav-active-color;
+$navbar-static-nav-active-background: $navbar-nav-active-background;
+
+
+.rd-navbar-static {
+  display: block;
+  box-shadow: $box-shadow-key-light, $box-shadow-ambient;
+
+  .rd-navbar-panel, .rd-navbar-nav-wrap {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .rd-navbar-panel {
+    text-align: left;
+    min-width: 300px;
+  }
+
+  .rd-navbar-nav-wrap {
+    width: 100%;
+    text-align: right;
+  }
+
+  .rd-navbar-nav{
+    margin-left: 8px;
+
+    > li {
+      display: inline-block;
+      margin-left: 8px;
+      vertical-align: middle;
+
+      > a {
+        display: block;
+        color: $navbar-static-nav-color;
+        background: $navbar-static-nav-background;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+      }
+
+      &.focus > a, > a:hover{
+        color: $navbar-static-nav-hover-color;
+        background: $navbar-static-nav-hover-background;
+      }
+
+      &.active > a {
+        color: $navbar-static-nav-active-color;
+        background: $navbar-static-nav-active-background;
+      }
+    }
+  }
+
+  // RD Navbar States
+  .rd-navbar-static--visible{
+    display: block;
+  }
+
+  .rd-navbar-static--hidden{
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+
+  .rd-navbar-static .rd-navbar-nav > li{
+    >a {
+      letter-spacing: 1px;
+    }
+  }
+}
+
+
+@media (min-width: 992px){
+  .rd-navbar-static .rd-navbar-nav > li{
+    margin-left: $navbar-static-nav-indent - 5;
+  }
+}

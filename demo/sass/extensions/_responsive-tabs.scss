@@ -1,0 +1,168 @@
+/*
+* @subsection   Easy Responsive Tabs
+*
+* @description  Describes style declarations for Easy Responsive Tabs extension
+*
+* @author       Samson Onna
+* @link         samson3d@gmail.com
+* @version      1.0.0
+*/
+
+$tabs-btn-height: 40px;
+$tabs-btn-indent: 0px;
+
+$tabs-btn-color: $contrast;
+
+$tabs-btn-active-color: $primary;
+
+$tabs-btn-border-radius: 4px;
+
+$tabs-btn-padding: 10px 5px 10px 20px;
+
+$tab-padding: 20px;
+
+.responsive-tabs{
+  position: relative;
+}
+
+.resp-tabs-list {
+  display: none;
+  word-spacing: $tabs-btn-indent - 4px;
+  background: #222;
+  z-index: 3;
+  @media (min-width: $screen-lg-min) {
+    background: none;
+    padding: 10px 0 10px 10px;
+  }
+}
+
+.resp-tab-item {
+  display: block;
+  word-spacing: normal;
+  padding: 10px 5px;
+  text-align: center;
+  border-top-left-radius: $tabs-btn-border-radius;
+  border-top-right-radius: $tabs-btn-border-radius;
+  cursor: pointer;
+  transition: .3s all ease;
+  color: #616161;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom: 2px solid transparent;
+//  text-shadow: 1px 1px 0 rgba(#000, .5);
+
+  &:hover{
+    color: $tabs-btn-active-color;
+  }
+
+  &.resp-tab-active{
+    color: $tabs-btn-active-color;
+    border-bottom-color: $primary;
+  }
+  @media (min-width: 1200px) {
+    text-align: left;
+    border-bottom-color: transparent;
+    padding: $tabs-btn-padding;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 14px;   background-color: rgba(#fff,.4);
+    color: #212121;
+    +.resp-tab-item{
+      margin-top: 5px;
+    }
+    &:hover, &.resp-tab-active{
+      border-bottom-color: transparent;
+      background-color: rgba(#fff,.7);
+      color: #212121;
+    }
+  }
+}
+
+.resp-accordion {
+  display: none;
+  border-radius: 0;
+}
+
+.resp-tab-content {
+  display: block!important;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: opacity .5s ease;
+  z-index: 1;
+  pointer-events: none;
+  .flickr{
+    -webkit-animation: scaleHalfDown 0.5s forwards cubic-bezier(0.7, 0, 0.3, 1);
+    animation: scaleHalfDown 0.5s forwards cubic-bezier(0.7, 0, 0.3, 1);
+
+  }
+  &-active{
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    pointer-events: auto;
+    .flickr{
+      -webkit-animation: slideInFromBottom 0.5s forwards cubic-bezier(0.7, 0, 0.3, 1);
+      animation: slideInFromBottom 0.5s forwards cubic-bezier(0.7, 0, 0.3, 1);
+    }
+  }
+}
+
+.resp-tabs-container{
+  position: relative;
+
+  >div{
+    padding: 20px 30px 30px;
+  }
+  @media (min-width: $screen-lg-min) {
+    margin-left: 230px;
+  }
+}
+
+@media (min-width: 768px) {
+  .resp-tabs-list {
+    display: block;
+  }
+}
+
+
+@-webkit-keyframes scaleHalfDown {
+  0% {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+  to {
+    -webkit-transform: scale(0.6);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleHalfDown {
+  from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+  to {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideInFromBottom {
+  from {
+    -webkit-transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

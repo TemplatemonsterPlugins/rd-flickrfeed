@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="wide wow-animation smoothscroll">
+<head>
+    <!-- Site Title -->
+    <title>RD Flick Gallery Demo</title>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+    <!-- Stylesheets -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='//fonts.googleapis.com/css?family=Lato:400,100,700,900,300' rel='stylesheet' type='text/css'>
+
+
+    <!--[if lt IE 10]>
+    <div style='background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- The Main Wrapper -->
+<div class="page">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header class="page-header">
+        <!-- RD Navbar -->
+        <div class="rd-navbar-wrap">
+            <nav class="rd-navbar" data-rd-navbar-lg="rd-navbar-static">
+                <div class="rd-navbar-inner">
+                    <!-- RD Navbar Panel -->
+                    <div class="rd-navbar-panel">
+
+                        <!-- RD Navbar Toggle -->
+                        <button class="rd-navbar-toggle"><span></span></button>
+                        <!-- END RD Navbar Toggle -->
+
+                        <!-- RD Navbar Brand -->
+                        <div class="rd-navbar-brand">
+                            <img src="images/favicon.png" alt=""/>
+
+                            <div class="brand-name"><span class="ubold">Flickr</span> <span class="light">Gallery</span>
+                            </div>
+                        </div>
+                        <!-- END RD Navbar Brand -->
+                    </div>
+                    <!-- END RD Navbar Panel -->
+
+                    <div class="rd-navbar-nav-wrap">
+
+                        <!-- RD Navbar Nav -->
+                        <ul class="rd-navbar-nav">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Contacts</a>
+                            </li>
+                        </ul>
+                        <!-- END RD Navbar Nav -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- END RD Navbar -->
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main class="page-content">
+
+        <section class="responsive-tabs" id="tags">
+            <aside>
+                <ul class="resp-tabs-list tabs owl-carousel" data-stage-padding="70" data-items="2" data-xs-items="3"
+                    data-margin="10" data-sm-items="4" data-loop="false">
+                    <li>Nature</li>
+                    <li>Animals</li>
+                    <li>People</li>
+                    <li>City</li>
+                </ul>
+            </aside>
+
+            <div class="resp-tabs-container tabs">
+                <div>
+                    <div class="blur"></div>
+                    <div class="flickr isotope row" data-flickr-tags="nature" data-flickr-date-format="%d %B %Y"
+                         data-isotope-group="nature" data-isotope-layout="fitRows" data-lightbox="gallery">
+
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                        <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+
+
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="blur"></div>
+                    <div class="flickr isotope row" data-flickr-tags="animals" data-flickr-date-format="%d %B %Y"
+                         data-isotope-group="animals" data-isotope-layout="fitRows" data-lightbox="gallery">
+
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+
+
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="blur"></div>
+                    <div class="flickr isotope row" data-flickr-tags="people" data-flickr-date-format="%d %B %Y"
+                         data-isotope-group="people" data-isotope-layout="fitRows" data-lightbox="gallery">
+
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+
+
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="blur"></div>
+                    <div class="flickr isotope row" data-flickr-tags="city" data-flickr-date-format="%d %B %Y"
+                         data-isotope-group="city" data-isotope-layout="fitRows" data-lightbox="gallery">
+
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+
+
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-type="flickr-item" data-tags="data-filter"
+                             class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                            <a class="thumb" href="#" data-image_b="href" data-lightbox="image">
+                                <div class="img-wrap">
+                                    <img src="images/_blank.png" data-image_z="src" data-title="alt" alt=""/>
+                                </div>
+                                <div class="thumb__info">
+                                    <h5 class="thumb__title" data-title="text"></h5>
+
+                                    <div class="thumb__author" data-author_name="text"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div id="filters" class="isotope-buttons">
+            <a id="floating-btn" class="floating-icon fa-bars" href='#'></a>
+        </div>
+
+        <!-- END Well-->
+        <!-- Flickr Feed Plugin -->
+
+        <!-- END Flickr Feed Plugin -->
+    </main>
+    <!--========================================================
+                              FOOTER
+    ==========================================================-->
+    <footer class="page-footer">
+    </footer>
+</div>
+
+<!-- Core Scripts -->
+<script src="js/core.min.js"></script>
+<!-- Additional Functionality Scripts -->
+<script src="js/script.js"></script>
+</body>
+</html>

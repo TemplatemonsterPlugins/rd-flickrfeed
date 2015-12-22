@@ -1,0 +1,84 @@
+/*
+* Sidebar Layout
+*/
+
+.rd-navbar-sidebar {
+  display: block;
+
+  // RD Navbar Toggle
+  .rd-navbar-toggle {
+    display: none;
+  }
+
+  // RD Navbar Brand
+  .rd-navbar-brand {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  // RD Navbar Search
+  .rd-navbar-search {
+    position: relative;
+    margin-bottom: 10px;
+
+    &-toggle{
+      display: none;
+    }
+
+    label {
+      display: block;
+    }
+
+    &.active {
+      .rd-navbar-search-form-input {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  // RD Navbar Live Search Results
+  .rd-navbar-live-search-results {
+    .search_link{
+      p{
+        display: none;
+      }
+    }
+  }
+
+  // RD Navbar Collapse
+  .rd-navbar-collapse-items {
+    top: 0;
+    left: 0;
+    padding-top: 45px;
+    @include transform(scale(.7));
+    @include transform-origin(0% 0%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .rd-navbar-collapse {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: inline-block;
+    z-index: 1;
+
+    &.active {
+      .rd-navbar-collapse-items {
+        opacity: 1;
+        visibility: visible;
+        @include transform(scale(1));
+      }
+    }
+  }
+
+  // RD Navbar States
+  .rd-navbar-sidebar--visible {
+    display: block;
+  }
+
+  .rd-navbar-sidebar--hidden {
+    display: none;
+  }
+}
